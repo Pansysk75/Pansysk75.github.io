@@ -1,0 +1,22 @@
+nav {
+  background-color: rgb(245, 245, 245);
+  padding: 2em;
+  border-bottom: 4px solid black;
+}
+.title {
+  font-size: xxx-large;
+  font-weight: 1000;
+  margin-right: 1em;
+  display: inline-block;
+}
+.description {
+  font-size: larger;
+  color: darkslategray;
+  font-weight: 100;
+  display: inline-block;
+}
+
+.link{
+  font-style: italic;
+  font-size: small;
+}

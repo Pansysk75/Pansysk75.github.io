@@ -1,0 +1,24 @@
+<div class="project-block" (click)="toggle()">
+  <div class="main-content">
+    <div>
+    <div class="left-content">
+      <div class="material-icons">{{ project.material_icon }}</div>
+        <div class="title">
+          <div>{{ project.name }}</div>
+          <div class="caption">{{ project.caption }}</div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!isExpanded" class="material-icons">expand_more</div>
+    <div *ngIf="isExpanded" class="material-icons">expand_less</div>
+  </div>
+
+  <div [@smooth-collapse]="!isExpanded ? 'initial' : 'final'" class="details">
+    <div *ngIf="project.image" class="image-border">
+      <img src="{{ project.image }}" />
+    </div>
+    <div class="description">
+      <div [innerHTML]="project.description"></div>
+    </div>
+  </div>
+</div>

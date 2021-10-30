@@ -1,0 +1,72 @@
+.project-block {
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.4em;
+  cursor: pointer;
+  margin: 0em;
+  padding: 0em;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.left-content {
+  display: flex;
+  margin: auto;
+}
+
+.title {
+  padding: 1em;
+  padding-left: 0;
+  font-size: x-large;
+  font-weight: 600;
+  display: block;
+}
+
+.caption {
+  margin-top: 0.2em;
+  font-size: small;
+  font-weight: 600;
+  color: rgb(255, 0, 255);
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+img {
+  max-height: 400px;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.4em;
+}
+
+.image-border {
+  padding: 1em;
+  background-color: transparent;
+  object-fit: cover;
+  margin: auto;
+}
+
+.description {
+  padding: 1em;
+  min-width: 200px;
+  flex-grow: 3;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 0.4em;
+}
+
+.description div {
+  margin: auto;
+}
+
+.material-icons {
+  color: rgba(0, 0, 0, 1);
+  padding: 1em;
+}

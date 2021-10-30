@@ -1,0 +1,18 @@
+h1 {
+  margin: 1em;
+  margin-left: 0;
+  font-size: xx-large;
+}
+
+.project {
+  display: flexbox;
+  margin: auto;
+  padding: 0.4em;
+}
+
+.project-list {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 2em;
+}
+
