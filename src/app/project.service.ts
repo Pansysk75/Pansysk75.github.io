@@ -12,7 +12,7 @@ export class ProjectService {
         description:
           '<div>&bull; Fetch comments from Reddit</div><br> <div>&bull; Search for specific keyword or RegEx expression</div><br> <div>&bull; Interactive GUI</div>',
         image:
-          'https://github.com/Pansysk75/Project-Showcase-Angular/blob/master/src/assets/reddit-comment-search.jpg?raw=true',
+          '../assets/reddit-comment-search.jpg',
         material_icon: 'desktop_windows',
       },
       {
@@ -21,7 +21,7 @@ export class ProjectService {
         description:
           '<div>&bull; Importing & parsing data from different file formats (3D models, image textures etc.)</div><br> <div>&bull; Efficient algorithms for real-time physics & rendering  on GPU</div> <br> <div>&bull; Mouse & keyboard input handling</div>',
         image:
-          'https://github.com/Pansysk75/Project-Showcase-Angular/blob/master/src/assets/opengl-soccer-demo.jpg?raw=true',
+          '../assets/opengl-soccer-demo.jpg',
         material_icon: 'videogame_asset',
       },
       {
@@ -30,7 +30,7 @@ export class ProjectService {
         description:
           '<div>&bull; Modern interactive front-end demo</div><br> <div>&bull; Responsive design</div> <br> <div>&bull; Object-oriented approach</div>',
           image:
-          'https://github.com/Pansysk75/Project-Showcase-Angular/blob/master/src/assets/project-showcase.jpg?raw=true',
+          '../assets/project-showcase.jpg',
         material_icon: 'cloud',
       },
       {
@@ -39,7 +39,7 @@ export class ProjectService {
         description:
           '<div>&bull; Small team project</div><br> <div>&bull; Utilized GitHub for remote cooperation </div>',
         image:
-          'https://github.com/Pansysk75/Project-Showcase-Angular/blob/master/src/assets/asteroids.jpg?raw=true',
+          '../assets/asteroids.jpg',
         material_icon: 'videogame_asset',
       },
     ];
