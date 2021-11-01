@@ -7,12 +7,24 @@ h1 {
 .project {
   display: flexbox;
   margin: auto;
+
   padding: 0.4em;
 }
 
 .project-list {
   max-width: 1200px;
+  overflow:hidden;
   margin: auto;
   padding-top: 2em;
+  animation: fade-in 2s 2s backwards 1;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
 }
 

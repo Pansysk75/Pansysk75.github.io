@@ -3,21 +3,54 @@ nav {
   padding: 2em;
   border-bottom: 4px solid black;
 }
+
+
 .title {
+  
   font-size: xxx-large;
   font-weight: 1000;
   margin-right: 1em;
-  display: inline-block;
+  display: block;
+
+  background: linear-gradient(to right, black 65%, var(--viva-pink) 70%, transparent 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 400% auto;
+  animation: slide-background 1s reverse backwards 1 cubic-bezier(0.645, 0.045, 0.355, 1);
+
 }
+@keyframes slide-background{
+
+  to{
+    background-position: 100%;
+  }
+}
+
 .description {
   font-size: larger;
-  color: darkslategray;
   font-weight: 100;
   display: inline-block;
+
+  background: linear-gradient(to right, black 65%, var(--viva-pink) 70%, transparent 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 400% auto;
+  animation: slide-background 1s 0.4s reverse backwards 1 cubic-bezier(0.645, 0.045, 0.355, 1);
+
 }
 
 .link{
   font-style: italic;
   font-size: small;
   margin-top: 1em;
+  opacity: 0;
+  animation: fade-in forwards 2s 1s 1;
+}
+
+@keyframes fade-in{
+  to{
+    opacity: 100%;
+  }
 }
