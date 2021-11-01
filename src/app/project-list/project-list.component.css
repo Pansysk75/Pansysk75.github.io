@@ -16,7 +16,7 @@ h1 {
   overflow:hidden;
   margin: auto;
   padding-top: 2em;
-  animation: fade-in 2s 2s backwards 1;
+  animation: fade-in 2s 1s backwards 1;
 }
 
 @keyframes fade-in {

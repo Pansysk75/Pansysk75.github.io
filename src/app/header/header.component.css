@@ -10,7 +10,7 @@ nav {
   font-size: xxx-large;
   font-weight: 1000;
   margin-right: 1em;
-  display: block;
+  margin: auto;
 
   background: linear-gradient(to right, black 65%, var(--viva-pink) 70%, transparent 75%);
   -webkit-background-clip: text;
