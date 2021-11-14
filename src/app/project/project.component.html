@@ -1,8 +1,8 @@
-<div class="project-block" (click)="toggle()">
-  <div class="main-content">
+<div class="project-block">
+  <div class="main-content" (click)="toggle()">
     <div>
-    <div class="left-content">
-      <div class="material-icons">{{ project.material_icon }}</div>
+      <div class="left-content">
+        <div class="material-icons">{{ project.material_icon }}</div>
         <div class="title">
           <div>{{ project.name }}</div>
           <div class="caption">{{ project.caption }}</div>
@@ -14,11 +14,20 @@
   </div>
 
   <div [@smooth-collapse]="!isExpanded ? 'initial' : 'final'" class="details">
-    <div *ngIf="project.image" class="image-border">
+    <div *ngIf="project.image" class="image-border" (click)="toggle()">
       <img src="{{ project.image }}" />
     </div>
-    <div class="description">
+    <div class="description" (click)="toggle()">
       <div [innerHTML]="project.description"></div>
+      <a *ngIf="project.url" href="{{project.url}}" target=”_blank” class="url-button"
+        (click)="$event.stopPropagation()">
+        <div>Visit Website
+          <div class="material-icons">open_in_new
+          </div>
+        </div>
+      </a>
     </div>
+
+
   </div>
 </div>

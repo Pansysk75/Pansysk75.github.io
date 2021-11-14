@@ -1,3 +1,5 @@
+
+
 .project-block {
   background-color: rgb(240, 240, 240);
   border-radius: 0.4em;
@@ -55,15 +57,37 @@ img {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.02);
+
   padding: 1em;
   min-width: 200px;
   flex-grow: 3;
-  background-color: rgba(0, 0, 0, 0.02);
   border-radius: 0.4em;
 }
 
-.description div {
-  margin: auto;
+  .description div {
+    justify-self: left;
+  }
+
+.url-button{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:space-around;
+
+
+  font-size: x-large;
+  text-decoration: none;
+  color: initial;
+  border-radius: 0.4em;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.url-button:hover{
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .material-icons {

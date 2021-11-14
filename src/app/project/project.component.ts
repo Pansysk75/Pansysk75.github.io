@@ -10,9 +10,10 @@ import {
 export interface Project {
   name: string;
   caption: string;
-  description: string;
-  image: string;
+  description?: string;
+  image?: string;
   material_icon?: string;
+  url?: string;
 
 }
 
@@ -52,5 +53,5 @@ export class ProjectComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

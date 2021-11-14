@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ProjectService {
-  constructor() {}
+  constructor() { }
 
   getProjects() {
     return [
@@ -10,7 +10,7 @@ export class ProjectService {
         name: 'Reddit Comment Search Tool',
         caption: 'Python, MySQL, PySimpleGUI, RegEx',
         description:
-          '<div>&bull; Fetch comments from Reddit</div><br> <div>&bull; Search for specific keyword or RegEx expression</div><br> <div>&bull; Interactive GUI</div>',
+          '<div>&bull; Desktop app</div><br><div>&bull; Fetch comments from Reddit</div><br> <div>&bull; Search for specific keyword or RegEx expression</div><br> <div>&bull; Interactive GUI</div>',
         image:
           'assets/reddit-comment-search.jpg',
         material_icon: 'desktop_windows',
@@ -25,15 +25,6 @@ export class ProjectService {
         material_icon: 'videogame_asset',
       },
       {
-        name: 'Project Showcase Web App',
-        caption: 'Agile, HTML/CSS/TypeScript',
-        description:
-          '<div>&bull; Modern interactive front-end demo</div><br> <div>&bull; Responsive design</div> <br> <div>&bull; Object-oriented approach</div>',
-          image:
-          'assets/project-showcase.jpg',
-        material_icon: 'cloud',
-      },
-      {
         name: 'Asteroids Game',
         caption: 'C++, OpenGL',
         description:
@@ -41,6 +32,25 @@ export class ProjectService {
         image:
           'assets/asteroids.jpg',
         material_icon: 'videogame_asset',
+      },
+      {
+        name: 'Project Showcase Web App',
+        caption: 'Agile, HTML/CSS/TypeScript',
+        description:
+          '<div>&bull; Modern interactive front-end demo</div><br> <div>&bull; Responsive design</div> <br> <div>&bull; Object-oriented approach</div>',
+        image:
+          'assets/project-showcase.jpg',
+        material_icon: 'cloud',
+      },
+      {
+        name: 'Sound Tools Web App',
+        caption: 'Agile, HTML/CSS/TypeScript',
+        description:
+          '<div>&bull; Audio visualisations & tools</div><br> <div>&bull; Currently under development</div> <br>',
+        image:
+          'assets/soundfield.jpg',
+        material_icon: 'cloud',
+        url: "https://pansysk75.github.io/soundfield/"
       },
     ];
   }
